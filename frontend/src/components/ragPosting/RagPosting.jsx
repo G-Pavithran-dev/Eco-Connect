@@ -85,6 +85,24 @@ const RagPosting = () => {
           </div>
         </div>
       </div>
+      <div className="about">
+        <div className="why-rag">
+          <h2>About Eco-Connect</h2>
+          <div className="about-content">
+            <h3>Eco-Connect is a pioneering platform dedicated to connecting ragpickers with consumers, 
+                aiming to create a sustainable and inclusive waste management system. By empowering ragpickers with
+                 fair wages and safe working conditions, we address the often-overlooked segment of the waste management
+                  workforce and promote responsible consumption. Our platform allows consumers to easily schedule pickups and track the 
+                recycling journey of their waste, ensuring transparency and environmental impact. CleanConnect not only 
+                simplifies waste disposal for consumers but also ensures that recyclable materials are efficiently 
+                processed. This reduces landfill waste and promotes a circular economy. Additionally, by providing fair
+                 compensation and support to ragpickers, CleanConnect improves their livelihoods and working conditions,
+                  addressing social inequities. Join CleanConnect to be part of a community that values sustainability,
+                   supports fair labor practices, and strives for a cleaner, greener future.</h3>
+            
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
