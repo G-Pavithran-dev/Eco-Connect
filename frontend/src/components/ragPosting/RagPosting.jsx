@@ -3,11 +3,12 @@ import "./ragPosting.css";
 import { AppBar, Toolbar, Typography } from "@mui/material";
 import RagPaper from "./RagPaper";
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 const RagPosting = () => {
   return (
     <div className="outer-container">
-      <Navbar />
+      
       <div className="container">
         <div className="text-container">
           <div className="line1">
@@ -28,7 +29,7 @@ const RagPosting = () => {
           <h2>Why use Eco-connect ?</h2>
           <div className="use">
             <div className="use1">
-              <h3>Easy Connect with Raggers</h3>
+              <h3>Easy Connect with Rag Pickers</h3>
               <p>
                 Our rag pickers are available 24/7 to collect your recyclable
                 waste
@@ -85,6 +86,7 @@ const RagPosting = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

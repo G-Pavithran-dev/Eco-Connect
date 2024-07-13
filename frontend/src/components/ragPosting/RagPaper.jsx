@@ -95,7 +95,7 @@ const RagPaper = () => {
             id="standard-basic"
             label="Phn"
             variant="standard"
-            type="number"
+            type="tel"
             value={phn}
             onChange={(e) => {
               setPhn(e.target.value);
@@ -146,7 +146,7 @@ const RagPaper = () => {
           />
         </div>
         <div className="button-get-address">
-          <Button variant="contained">Get Raggers</Button>
+          <Button variant="contained">Find Pickers</Button>
         </div>
       </Paper>
     </div>
