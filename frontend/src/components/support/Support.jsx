@@ -36,7 +36,7 @@ const Data =[
 export const Support =()=>{
 
     return(
-        <section className='support-main'>
+        <section className='support-main' id='contact'>
             <div className="title">
                 <h1>HELP CENTER</h1>
                 <p>Need assistance? We&apos;re happy to help, reach us out through the appropriate channels below.</p>
