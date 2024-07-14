@@ -670,8 +670,6 @@ const Home = () => {
                   fontSize: "1.2rem",
                   fontFamily: "sans-serif",
                   padding: "2px",
-                  // wordSpacing: ".1rem",
-                  letterSpacing: "0.5px",
                 }}
               >
                 Eco Connect
