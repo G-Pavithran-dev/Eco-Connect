@@ -1,6 +1,7 @@
 import React from "react";
 import './about.css';
 import img from './Chat-automation.jpeg'
+import Footer from "../footer/Footer";
 
 
 export const About =() =>{
@@ -40,17 +41,20 @@ EcoConnect is strongly committed towards improving the quality of life of our pa
                 </div>
             </div>
             <div className="footer">
-                <h3 className="main">India's Largest Marketplace for Intracity Logistics | Revolutionizing one delivery at a time</h3>
+                <h3 className="main">India&apos;s Largest Marketplace for Intracity Logistics | Revolutionizing one delivery at a time</h3>
             <ul>
                 <li><h3>2014</h3>YEAR FOUNDED</li>
                 <li><h3>8 Million+</h3>CUSTOMERS</li>
                 <li><h3>1200+</h3>STRONG TEAM</li>
             </ul>
 
-            <h2>JOIN PORTER</h2>
+            <h2>JOIN ECO-CONNECT</h2>
+            <br />
             <p>Help us build the smartest transport logistics platform in the world.</p>
+            <br />
             <button>SEE OPEN POSITION</button>
             </div>
+            <Footer />
         </section>
     )
 }

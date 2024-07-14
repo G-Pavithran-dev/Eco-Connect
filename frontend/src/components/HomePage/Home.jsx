@@ -17,6 +17,8 @@ import metalWaste from "../../../public/waste.png";
 import plasticWaste from "../../../public/pollution.png";
 import paperWaste from "../../../public/paper-bin.png";
 import eWaste from "../../../public/e-waste.png";
+import Footer from "../footer/Footer";
+import { Link } from "react-router-dom";
 const Home = () => {
   const [age, setAge] = React.useState("");
 
@@ -227,6 +229,7 @@ const Home = () => {
               Best for handling bulk wastes including glass and e-waste.{" "}
             </div>
           </Card>
+          <Link to='/findRagPickers'>
           <Card
             className="transfer"
             sx={{
@@ -268,6 +271,7 @@ const Home = () => {
               />
             </Button>
           </Card>
+          </Link>
         </div>
       </Card>
 
@@ -805,6 +809,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

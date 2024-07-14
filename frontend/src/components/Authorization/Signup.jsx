@@ -39,8 +39,8 @@ export default function SignUp() {
 
   return (
     // <ThemeProvider theme={defaultTheme}>
-    <div>
-      <Container component="main" maxWidth="xs">
+    <div className="signup">
+      <Container component="main" maxWidth="md" >
         <CssBaseline />
         <Box
           sx={{
@@ -122,12 +122,13 @@ export default function SignUp() {
               fullWidth
               variant="contained"
               sx={{ mt: 3, mb: 2 }}
+              href="/login"
             >
               Sign Up
             </Button>
             <Grid container justifyContent="flex-end">
               <Grid item>
-                <Link href="#" variant="body2">
+                <Link href="/login" variant="body2">
                   Already have an account? Sign in
                 </Link>
               </Grid>
@@ -136,6 +137,5 @@ export default function SignUp() {
         </Box>
       </Container>
     </div>
-    // </ThemeProvider>
   );
 }
