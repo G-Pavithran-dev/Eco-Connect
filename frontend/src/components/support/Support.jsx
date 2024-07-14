@@ -5,6 +5,7 @@ import enter from "./enter.jpg"
 import lorry from "./lorry.jpg"
 
 import './support.css';
+import Footer from '../footer/Footer';
 
 const Data =[
     {
@@ -35,10 +36,10 @@ const Data =[
 export const Support =()=>{
 
     return(
-        <section >
+        <section className='support-main'>
             <div className="title">
                 <h1>HELP CENTER</h1>
-                <p>Need assistance? We're happy to help, reach us out through the appropriate channels below.</p>
+                <p>Need assistance? We&apos;re happy to help, reach us out through the appropriate channels below.</p>
             </div>
                
             <div className="support">
@@ -60,13 +61,16 @@ export const Support =()=>{
 
             <div className="office">
                 <h1>Head Office</h1>
+                <br />
                 <h2>Coimbatore</h2>
+                <br />
                 <p>Eco Connect Head Office, BCM Prime 1st Cross,<br /> BDA Layout, Ghandhipuram Main Rd, New <br /> Ramanathapuram,Ghandhipuram Extension,<br />  Coimbatore, TamilNadu 641008</p>
+                <br />
                 <a href="https://www.google.com/maps/place/Coimbatore,+Tamil+Nadu/@11.0139578,76.8848334,12z/data=!3m1!4b1!4m6!3m5!1s0x3ba859af2f971cb5:0x2fc1c81e183ed282!8m2!3d11.0168445!4d76.9558321!16zL20vMDE5ZmM0?entry=ttu" target="-blank">
-                Get Direction >
+                Get Direction &gt;
                 </a>
             </div>
-           
+            <Footer />
         </section>
     )
 }

@@ -1,8 +1,6 @@
-*{
-    margin-top: 30px;
+.support-main{
     background-color: black;
     color: white;
-    
 }
 .title{
     text-align: center;
@@ -93,7 +91,7 @@
 
     margin-top: 30%;
     text-align: center;
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
 
 }
 .office h1{
@@ -135,4 +133,32 @@
       
         font-size: 30px;
     }
+}
+
+.title > h1 {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.title > p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 4rem;
+}
+
+.task {
+    margin: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.col2{
+    margin: 1.5rem;
+    padding: 1rem;
+    
+}
+
+.office {
+    padding-bottom: 4rem;
 }
