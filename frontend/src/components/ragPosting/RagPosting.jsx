@@ -83,7 +83,7 @@ const RagPosting = () => {
         </div>
       </div>
 
-      <div className="about">
+      <div className="about2">
         <div className="why-rag">
           <h2>About Eco-Connect</h2>
           <div className="about-content">
