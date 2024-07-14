@@ -14,7 +14,7 @@ const Navbar = () => {
             lineHeight: "0.5rem",
           }}
         >
-          <Typography sx={{ fontWeight: "550" }}>ECO-CONNECT</Typography>
+          <img src='/images/logo-no-background.png' style={{width:'12rem'}} />
           <div
             style={{
               display: "flex",

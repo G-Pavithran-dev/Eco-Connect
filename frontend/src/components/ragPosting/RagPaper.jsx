@@ -95,7 +95,7 @@ const RagPaper = () => {
             id="standard-basic"
             label="Phn"
             variant="standard"
-            type="number"
+            type="tel"
             value={phn}
             onChange={(e) => {
               setPhn(e.target.value);
@@ -146,6 +146,7 @@ const RagPaper = () => {
           />
         </div>
         <div className="button-get-address">
+
           <Button variant="contained" onClick={(e)=>{
             e.preventDefault();
             axios.post("http://localhost:8080/ecoconnect/postragger/post",{
@@ -157,7 +158,8 @@ const RagPaper = () => {
               estimatedAmount:estimatedvalue
               
             })
-          }}>Get Raggers</Button>
+          }}>Find Pickers</Button>
+
         </div>
       </Paper>
     </div>
