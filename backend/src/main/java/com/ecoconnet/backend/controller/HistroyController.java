@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ecoconnet.backend.model.Histroy;
 import com.ecoconnet.backend.service.HistoryService;
 
-@CrossOrigin("http://localhost:5173/findUsers")
+@CrossOrigin("http://localhost:5173/")
 @RestController
 public class HistroyController {
     

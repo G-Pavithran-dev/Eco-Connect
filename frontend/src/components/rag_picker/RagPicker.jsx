@@ -14,6 +14,7 @@ import Looks2Icon from '@mui/icons-material/LooksTwo'
 import Looks3Icon from '@mui/icons-material/Looks3'
 import './rag_picker.css'
 import Footer from '../footer/Footer'
+import { Link } from 'react-router-dom'
 
 export default function RagPicker() {
   const [formData, setFormData] = React.useState({
@@ -152,8 +153,12 @@ export default function RagPicker() {
         <Typography variant="h4" sx={{ textAlign: 'center', margin: '2rem 0' }}>
           Why join us?
         </Typography>
-        <Grid container spacing={4} sx={{ textAlign: 'center', paddingLeft: '15rem' }}>
-          <Grid item lg={6} >
+        <Grid
+          container
+          spacing={4}
+          sx={{ textAlign: 'center', paddingLeft: '15rem' }}
+        >
+          <Grid item lg={6}>
             <Box sx={{ width: '50%' }}>
               <img
                 src="/images/earn-money.png"
@@ -238,6 +243,7 @@ export default function RagPicker() {
             <Typography>Get paid for the waste you collect.</Typography>
           </Grid>
         </Grid>
+        
       </Box>
       <Footer />
     </Box>

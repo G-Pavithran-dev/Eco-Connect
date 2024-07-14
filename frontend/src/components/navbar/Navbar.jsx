@@ -40,15 +40,15 @@ const Navbar = () => {
           style={{
             display: 'flex',
             justifyContent: 'space-around',
-            width: '15%'
+            width: '15%',
           }}
         >
-        <Link to="/support">
-          <Typography sx={{ fontWeight: '550' }}>Support</Typography>
-        </Link>
-        <Link to="/login">
-          <Typography sx={{ fontWeight: '550' }}>SignIn</Typography>
-        </Link>
+          <Link to="/support">
+            <Typography sx={{ fontWeight: '550' }}>Support</Typography>
+          </Link>
+          <Link to="/findUsers" sx={{ display: 'flex' }}>
+            <Typography sx={{ fontWeight: '550' }}>Find Requests</Typography>
+          </Link>
         </div>
       </Toolbar>
     </AppBar>
