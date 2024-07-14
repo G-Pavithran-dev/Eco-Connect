@@ -1,0 +1,19 @@
+* {
+  border: 0;
+  /* padding: 0; */
+  margin: 0;
+  font-family: sans-serif;
+}
+.background {
+  width: 100%;
+  /* background-image: url("../../../public/Designer\ \(1\).png"); */
+}
+.Description {
+  font-family: Titllium Web, sans-serif;
+  width: 80%;
+}
+.Name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+}
