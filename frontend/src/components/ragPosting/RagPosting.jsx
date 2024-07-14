@@ -30,32 +30,28 @@ const RagPosting = () => {
             <div className="use1">
               <h3>Easy Connect with Raggers</h3>
               <p>
-                Our rag pickers are available 24/7 to collect your recyclable
-                waste
+              Our rag pickers are available around the clock to collect your recyclable waste conveniently.
               </p>
             </div>
             <div className="use2">
               <h3>Door to Door Services</h3>
               <p>
-                Our rag pickers are available 24/7 to collect your recyclable
-                waste
+              Enjoy the convenience of our 24/7 door-to-door recyclable waste collection service.
               </p>
             </div>
           </div>
-          <div className="use">
+          <div className="use" >
             <div className="use3">
               <h3>Get Anything sell</h3>
               <p>
-                Our rag pickers are available 24/7 to collect your recyclable
-                waste
+              Our rag pickers help you sell your recyclable waste at any time.
               </p>
             </div>
-            <div className="use4">
+            <div className="use4" style={{marginLeft:"12vh"}}>
               <h3>Negotiable Price</h3>
               <p>
-                Our rag pickers are available 24/7 to collect your recyclable
-                waste
-              </p>
+              
+              We offer flexible pricing for your recyclable waste,ensuring the best deal.              </p>
             </div>
           </div>
         </div>

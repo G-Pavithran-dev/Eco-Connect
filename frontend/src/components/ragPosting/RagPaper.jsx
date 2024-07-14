@@ -9,7 +9,7 @@ import {
 } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import "./ragPaper.css";
-
+import axios from 'axios';
 const RagPaper = () => {
   const [estimatedvalue, setEstimatedvalue] = useState(0);
   const [address, setAddress] = useState("");
@@ -146,7 +146,18 @@ const RagPaper = () => {
           />
         </div>
         <div className="button-get-address">
-          <Button variant="contained">Get Raggers</Button>
+          <Button variant="contained" onClick={(e)=>{
+            e.preventDefault();
+            axios.post("http://localhost:8080/ecoconnect/postragger/post",{
+              name:name,
+              phone:phn,
+              address:address,
+              ragType:ragselect,
+              quantity:quantity,
+              estimatedAmount:estimatedvalue
+              
+            })
+          }}>Get Raggers</Button>
         </div>
       </Paper>
     </div>
