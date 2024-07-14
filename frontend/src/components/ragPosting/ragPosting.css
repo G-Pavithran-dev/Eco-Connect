@@ -16,7 +16,6 @@
     background-size: cover;
     align-items: center;
     position: relative;
-    
 }
 .text-container{
     color: white;
@@ -83,19 +82,25 @@
     font-size: 1.06rem;
 }
 .why-rag p{
-    margin-top: 2%;
+    margin-top: 4%;
 }
 .all-area{
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
     
     width: 65%;
-    gap: 13%;
+    gap: 12%;
     line-height: 250%;
 
     
 }
 .all-area h3{
     font-weight: 200;
+}
+.about-content h3{
+    
+    font-weight: 200;
+    line-height: 5dvh;
+    padding-bottom: 5dvh;
 }
 
