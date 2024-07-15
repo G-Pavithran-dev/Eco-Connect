@@ -60,11 +60,13 @@
     align-content: center;
 }
 .about{
-    height: 40dvh;
-    padding-top: 8%;
+    width: 100%;
+    height: max-content;
     display: flex;
     justify-content: space-around;
     align-content: center;
+    text-align: center;
+    margin-bottom: 5dvh;
 }
 .about2{
     height: 30dvh;
@@ -75,12 +77,12 @@
     padding-Bottom:30dvh;
 }
 .why-rag{
-    width: 65%;
+    width: 95%;
     
 }
 .why-rag h2{
     text-align: center;
-    margin-bottom: 6%;
+    margin-bottom: 4%;
     font-size: 2rem;
 }
 .use{
@@ -109,8 +111,4 @@
     
     font-weight: 200;
     line-height: 5dvh;
-    
-}
-.about-content{
-    
 }

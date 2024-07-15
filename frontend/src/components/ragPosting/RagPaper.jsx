@@ -1,5 +1,10 @@
 import {
   Button,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  DialogContentText,
+  DialogTitle,
   FormControl,
   InputLabel,
   MenuItem,
@@ -17,6 +22,11 @@ const RagPaper = () => {
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState('');
   const [ragselect, setRagselect] = useState("");
+  const [openDialog, setOpenDialog] = React.useState(false)
+
+  const handleClick = () => {
+    setOpenDialog(true)
+  }
 
   useEffect(() => {
     console.log(quantity);
@@ -51,21 +61,21 @@ const RagPaper = () => {
   return (
     <div
       style={{
-        width: "100%",
-        display: "flex",
-        justifyContent: "center",
-        height: "30%",
-        position: "relative",
-        top: "54%",
+        width: '100%',
+        display: 'flex',
+        justifyContent: 'center',
+        height: '30%',
+        position: 'relative',
+        top: '54%',
       }}
     >
       <Paper
         sx={{
-          width: "75%",
-          display: "flex",
-          justifyContent: "space-around",
-          paddingTop: "1.3%",
-          paddingLeft: "1%",
+          width: '75%',
+          display: 'flex',
+          justifyContent: 'space-around',
+          paddingTop: '1.3%',
+          paddingLeft: '1%',
         }}
       >
         <div className="input-address">
@@ -75,7 +85,7 @@ const RagPaper = () => {
             variant="standard"
             value={address}
             onChange={(e) => {
-              setAddress(e.target.value);
+              setAddress(e.target.value)
             }}
           />
         </div>
@@ -86,7 +96,7 @@ const RagPaper = () => {
             variant="standard"
             value={name}
             onChange={(e) => {
-              setName(e.target.value);
+              setName(e.target.value)
             }}
           />
         </div>
@@ -98,7 +108,7 @@ const RagPaper = () => {
             type="tel"
             value={phn}
             onChange={(e) => {
-              setPhn(e.target.value);
+              setPhn(e.target.value)
             }}
           />
         </div>
@@ -113,15 +123,15 @@ const RagPaper = () => {
               value={ragselect}
               label="Age"
               onChange={(e) => {
-                setRagselect(e.target.value);
+                setRagselect(e.target.value)
               }}
             >
-              <MenuItem value={"Metal"}>Metal</MenuItem>
-              <MenuItem value={"Paper"}>Paper</MenuItem>
-              <MenuItem value={"Plastic"}>Plastic</MenuItem>
-              <MenuItem value={"Glass"}>Glass</MenuItem>
-              <MenuItem value={"Mixed"}>Mixed</MenuItem>
-              <MenuItem value={"Other"}>Other</MenuItem>
+              <MenuItem value={'Metal'}>Metal</MenuItem>
+              <MenuItem value={'Paper'}>Paper</MenuItem>
+              <MenuItem value={'Plastic'}>Plastic</MenuItem>
+              <MenuItem value={'Glass'}>Glass</MenuItem>
+              <MenuItem value={'Mixed'}>Mixed</MenuItem>
+              <MenuItem value={'Other'}>Other</MenuItem>
             </Select>
           </FormControl>
         </div>
@@ -133,7 +143,7 @@ const RagPaper = () => {
             type="number"
             value={quantity}
             onChange={(e) => {
-              setQuantity(e.target.value);
+              setQuantity(e.target.value)
             }}
           />
         </div>
@@ -146,24 +156,40 @@ const RagPaper = () => {
           />
         </div>
         <div className="button-get-address">
-
-          <Button variant="contained" onClick={(e)=>{
-            e.preventDefault();
-            axios.post("http://localhost:8080/ecoconnect/postragger/post",{
-              name:name,
-              phone:phn,
-              address:address,
-              ragType:ragselect,
-              quantity:quantity,
-              estimatedAmount:estimatedvalue
-              
-            })
-          }}>Find Pickers</Button>
-
+          <Button
+            variant="contained"
+            fullWidth
+            onClick={(e) => {
+              e.preventDefault()
+              handleClick()
+              axios.post('http://localhost:8080/ecoconnect/postragger/post', {
+                name: name,
+                phone: phn,
+                address: address,
+                ragType: ragselect,
+                quantity: quantity,
+                estimatedAmount: estimatedvalue,
+              })
+            }}
+          >
+            Find Pickers
+          </Button>
         </div>
       </Paper>
+      <Dialog open={openDialog} onClose={() => setOpenDialog(false)}>
+        <DialogTitle>Submission Successful</DialogTitle>
+        <DialogContent>
+          <DialogContentText>
+            Thank you for posting your rag details. We will inform you once a
+            picker accepts your order.
+          </DialogContentText>
+        </DialogContent>
+        <DialogActions>
+          <Button onClick={() => setOpenDialog(false)}>Close</Button>
+        </DialogActions>
+      </Dialog>
     </div>
-  );
+  )
 };
 
 export default RagPaper;
